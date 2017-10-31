@@ -24,10 +24,10 @@
         "illuminate/database": "~5.1",
         "illuminate/support": "~5.1",
         "illuminate/container": "^5.2|^5.1",
-        "dompdf/dompdf": "^0.6.1",
+        "dompdf/dompdf": "0.*",
         "nesbot/carbon": "~1.0",
         "symfony/http-kernel": "~2.7|~3.0",
-        "authorizenet/authorizenet": "1.8.8",
+        "authorizenet/authorizenet": "1.*",
         "jms/serializer": "xsd2php-dev as 0.18.0"
     },
     "require-dev": {
