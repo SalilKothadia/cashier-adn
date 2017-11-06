@@ -184,12 +184,11 @@ trait Billable
      */
     public function subscription($subscription = 'default')
     {
-        return $this->subscriptions->sortByDesc(function ($value) {
-            return $value->created_at->getTimestamp();
-        })
-        ->first(function ($key, $value) use ($subscription) {
-            return $value->name === $subscription;
-        });
+        foreach ($this->subscriptions as $sub) {
+            if ($sub->name == $subscription) {
+                return $sub;
+            }
+        }
     }
 
     /**
